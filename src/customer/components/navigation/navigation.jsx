@@ -11,14 +11,14 @@ import MensDropdown from './MensDropdown'; // Import the Mens dropdown component
 import WomensDropdown from './WomensDropdown'; // Import the Womens dropdown component
 import JwelleryDropdown from './JwelleryDropdown'; // Import the Jwellery dropdown component
 import PerfumesDropdown from './PerfumesDropdown'; // Import the Perfumes dropdown component
-import Footer from '../footer/footer'; // Import the Footer
+// import Footer from '../footer/footer'; // Import the Footer
 const Navbar = () => {
   return (
     <div className="w-full relative">
       {/* Main Header */}
       <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
         {/* Logo */}
-        <h1 className="text-3xl font-bold font-cinzel text-black">TRENDORA</h1>
+       <img src={require('../images/text_logo3.png')} alt="Trendora Logo" className="h-7 w-auto" />
 
         {/* Search Bar */}
         <div className="relative w-1/3">
@@ -138,7 +138,7 @@ const Navbar = () => {
         </ul>
       </div>
       {/* Footer Component */}
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 };
