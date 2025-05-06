@@ -12,7 +12,7 @@ import WomensDropdown from './WomensDropdown'; // Import the Womens dropdown com
 import JwelleryDropdown from './JwelleryDropdown'; // Import the Jwellery dropdown component
 import PerfumesDropdown from './PerfumesDropdown'; // Import the Perfumes dropdown component
 // import Footer from '../footer/footer'; // Import the Footer
-const Navbar = () => {
+const Navbar = ({ toggleDropdown }) => {
   return (
     <div className="w-full relative">
       {/* Main Header */}
@@ -36,7 +36,7 @@ const Navbar = () => {
 
         {/* User Icons */}
         <div className="flex items-center gap-4 text-gray-700">
-          <UserIcon className="w-6 h-6 hover:text-pink-500 cursor-pointer" />
+          <UserIcon className="w-6 h-6 hover:text-pink-500 cursor-pointer" onClick={toggleDropdown} />
           <div className="relative">
             <HeartIcon className="w-6 h-6 hover:text-pink-500 cursor-pointer" />
             <span className="absolute -top-2 -right-2 bg-red-600 text-white rounded-full text-xs px-1">0</span>
